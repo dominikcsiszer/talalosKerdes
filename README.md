@@ -2,9 +2,9 @@
 Logikát leírni mi alapján döntöttem el, hogy melyik a helyes válasz (táblázatos formában)
 | Láda | Érvelés | Logikai állapota |
 | --- | --- | --- |
-| `Arany láda` |  | Igaz |
-| `Ezüst láda` |  | Hamis |
-| `Bronz láda` |  | Hamis |
+| `Arany láda` | Mivel ez a láda egy pozitív állítást mond ezért elsőnek ezt egy Igaz állításnak vettem. | Igaz |
+| `Ezüst láda` | Ez a láda számomra egy negatív állítást állít és ezért egy Hamis állításnak vettem ezt. | Hamis |
+| `Bronz láda` | A bronz láda az első láda állítását letagadja, azaz ez egy Hamis állítás lesz. | Hamis |
 
 ### Maga a kérdés
 Melyik ládában van a kincs, három ládánk van azt az infót tudjuk mindegyik ládán van egy felirat és az egyik a helyes. 
