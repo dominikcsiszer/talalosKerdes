@@ -7,7 +7,10 @@ public class Palya {
     private static final char MELLE_JEL = 'O';
     
     private char[] palya;
-    private Lada lada;
+    // Rossz megoldás
+    private Lada aranyLada;
+    private Lada ezustLada;
+    private Lada bronzLada;
 
     public Palya() {
         palyaLetrehoz();
@@ -18,7 +21,10 @@ public class Palya {
         for (int i = 0; i < PALYA_HOSSZ; i++) 
             palya[i] = PALYA_JEL[i];
         
-        lada = new Lada(new String[]{"Arany", "Ezüst", "Bronz"});
+        // Rossz megoldás
+        aranyLada = new Lada(Lada.ARANY_LADA, "Én rejtem a kincset");
+        ezustLada = new Lada(Lada.EZUST_LADA, "Nem én rejtem a kincset");
+        bronzLada = new Lada(Lada.BRONZ_LADA, "Az arany láda hazudik");
     }
     
     public void tipp(String tipp) {
@@ -31,6 +37,15 @@ public class Palya {
     /* Getter Setterek */
     public char[] getPalya() {
         return palya;
+    }
+    public Lada getAranyLada() {
+        return aranyLada;
+    }
+    public Lada getEzustLada() {
+        return ezustLada;
+    }
+    public Lada getBronzLada() {
+        return bronzLada;
     }
     
 }

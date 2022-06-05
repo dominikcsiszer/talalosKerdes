@@ -12,6 +12,9 @@ public class Program {
         System.out.println(p.getPalya());
         p.tipp("Arany láda");
         System.out.println(p.getPalya());
+        System.out.println(p.getAranyLada());
+        System.out.println(p.getEzustLada());
+        System.out.println(p.getBronzLada());
     }
     
 }
