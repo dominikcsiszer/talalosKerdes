@@ -1,14 +1,20 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package test;
 
-/**
- *
- * @author szf1 a1
- */
+import modell.Lada;
+import modell.Palya;
+
 public class talalosTest {
-    
+
+    public static void main(String[] args) {
+        Palya p = new Palya();
+        
+        /* Tippelés helyesen */
+        System.out.println(p.getPalya());
+        p.tipp(Lada.HELYES);
+        
+        /* Tippelés elrontva, akkor úgy adja vissza mintha hibásan tippeltünk volna. */
+        System.out.println(p.getPalya());
+        p.tipp("Arany láda");
+        System.out.println(p.getPalya());
+    }
 }
