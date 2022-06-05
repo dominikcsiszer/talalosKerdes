@@ -38,14 +38,14 @@ public class Palya {
     public char[] getPalya() {
         return palya;
     }
-    public Lada getAranyLada() {
-        return aranyLada;
+    public String getAranyLada() {
+        return aranyLada.getLeiras();
     }
-    public Lada getEzustLada() {
-        return ezustLada;
+    public String getEzustLada() {
+        return ezustLada.getLeiras();
     }
-    public Lada getBronzLada() {
-        return bronzLada;
+    public String getBronzLada() {
+        return bronzLada.getLeiras();
     }
     
 }

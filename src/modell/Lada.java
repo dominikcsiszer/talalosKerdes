@@ -3,15 +3,13 @@ package modell;
 public class Lada {
     public static String TALALT = "talált";
     public static String MELLE = "mellé";
-    public static String HELYES = "arany";
+    public static String HELYES = "A";
     public static String ARANY_LADA = "Arany láda";
     public static String EZUST_LADA = "Ezüst láda";
     public static String BRONZ_LADA = "Bronz láda";
 
     private String nev;
     private String leiras;
-    
-    int[] poziciok;
     
     public Lada(String nev, String leiras) {
         this.nev = nev;
@@ -27,7 +25,11 @@ public class Lada {
 
     @Override
     public String toString() {
-        return nev + " " + leiras;
+        return leiras;
+    }
+    
+    public String getLeiras() {
+        return leiras;
     }
     
     
